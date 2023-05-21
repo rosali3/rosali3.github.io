@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uber Eats</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
-        <div class = row>
+        <div class = header-line>
             <div class="header__logo">
                 <img src="./img/logo.svg" alt="logo">
             </div>
@@ -32,7 +33,7 @@
             </div>
         </div>
     </header>
-    <div class="search_bar" class="inline">
+    <div class="searchbar" class="inline">
         <img src="./img/search.svg"/>
         <input type="text" placeholder="Search for restaurant or cuisine">
     </div>
@@ -47,166 +48,165 @@
             <input class="mobile__search__address" type="text" placeholder="ul. Bolshaya Dmitrovka,22">
         </label>
     </div>
-
+    <div class="main__title">Moscow Restaurants</div>
     <main>
-        <h1 class="main__title">Moscow Restaurants</h1>
-        <div class = "main__restaurants">
-            <ul class="cards_list">
-                <li class="card">
-                  <a href="#" class="card card__link">
+        
+        <div class="main__restaurants">
+            <div class="main__restaurant_card">
+                <a  href="#">
                     <img src="./img/11.svg" alt="food_picture">
-                    <span class="card__restaurant">Макдоналдс -Газетный</span>
-                    <span class="card__category">₽₽ • Бургеры</span>
-                    <span class="card__time">25 - 35 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="#" class="card card__link">
+                    <div class="card__restaurant">Макдоналдс -Газетный</div>
+                    <div class="card__category">₽₽ • Бургеры</div>
+                    <div class="card__time">25 - 35 Min</div>
+                </a>
+            </div>
+            <div class="main__restaurant_card">
+                <a  href="#">
                     <img src="./img/12.svg" alt="food_picture">
-                    <span class="card__restaurant">DimSum & Co — ЦДМ</span>
-                    <span class="card__category">₽ • Японская • Китайская • Азиатская</span>
-                    <span class="card__time">40 - 50 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="#" class="card card__link">
+                    <div class="card__restaurant">DimSum & Co — ЦДМ</div>
+                    <div class="card__category">₽ • Японская • Китайская • Азиатская</div>
+                    <div class="card__time">40 - 50 Min</div>
+                </a>
+            </div>
+            <div class="main__restaurant_card">
+                <a  href="#">
                     <img src="./img/13.svg" alt="food_picture">
-                    <span class="card__restaurant">ДвижОК — Манежная</span>
-                    <span class="card__category">₽ • Американская • Европейская</span>
-                    <span class="card__time">35 - 45 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="#" class=" card card__link">
+                    <div class="card__restaurant">ДвижОК — Манежная</div>
+                    <div class="card__category">₽ • Американская • Европейская</div>
+                    <div class="card__time">35 - 45 Min</div>
+                </a>
+            </div>
+            <div class="main__restaurant_card">
+                <a  href="#">
                     <img src="./img/21.svg" alt="food_picture">
-                    <span class="card__restaurant">НЯ — NHA</span>
-                    <span class="card__category">₽₽ • Вьетнамская</span>
-                    <span class="card__time">30 - 40 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="#" class=" card card__link">
+                    <div class="card__restaurant">НЯ — NHA</div>
+                    <div class="card__category">₽₽ • Вьетнамская</div>
+                    <div class="card__time">30 - 40 Min</div>
+                </a>
+            </div>
+            <div class="main__restaurant_card">
+                <a  href="#">
                     <img src="./img/22.svg" alt="food_picture">
-                    <span class="card__restaurant">Точка Дзы — Цветной</span>
-                    <span class="card__category">₽₽ • Вьетнамская</span>
-                    <span class="card__time">40 - 50 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="#" class=" card card__link">
+                    <div class="card__restaurant">Точка Дзы — Цветной</div>
+                    <div class="card__category">₽₽ • Вьетнамская</div>
+                    <div class="card__time">40 - 50 Min</div>
+                </a>
+            </div>
+            <div class="main__restaurant_card">
+                <a  href="#">
                     <img src="./img/23.svg" alt="food_picture">
-                    <span class="card__restaurant">Cinnabon</span>
-                    <span class="card__category">₽ • Выпечка • Десерты • Капкейки</span>
-                    <span class="card__time">25 - 35 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="" class=" card card__link">
-                    <img src="./img/31.svg" alt="food_picture">
-                    <span class="card__restaurant">PIZZELOVE</span>
-                    <span class="card__category">₽₽ • Пицца</span>
-                    <span class="card__time">15 - 25 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="" class=" card card__link">
-                    <img src="./img/32.svg" alt="food_picture">
-                    <span class="card__restaurant">Zю кафе — Тверская</span>
-                    <span class="card__category">₽₽ • Японская</span>
-                    <span class="card__time">25 - 35 Min</span>
-                  </a>
-                </li>
-          
-                <li class="card">
-                  <a href="" class=" card card__link">
-                    <img src="./img/33.svg" alt="food_picture">
-                    <span class="card__restaurant">Bar BQ Cafe — Манежная</span>
-                    <span class="card__category">₽₽₽ • Европейская</span>
-                    <span class="card__time">30 - 40 Min</span>
-                  </a>
-                </li>
-            </ul>
+                    <div class="card__restaurant">Cinnabon</div>
+                    <div class="card__category">₽ • Выпечка • Десерты • Капкейки</div>
+                    <div class="card__time">25 - 35 Min</div>
+                </a>
+            </div>
         </div>
     </main>
-    <footer>
-        <div class="footer__logo">
-            <img src="./img/flogo.svg" alt="logo">
-        </div>
-
-        <div class="footer_info">
-            <select name="language">
+    
+<footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <a href="#"
+          ><img
+            src="./img/flogo.svg"alt="Uber Eats", width="191" height="20"/></a>
+      </div>
+  
+      <div class="row footer__info">
+        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="footer__info-contacts">
+            <div class="footer__info-contacts-dropdown">
+              <select name="language">
                 <option value="english">English</option>
                 <option value="russian">Русский</option>
-                <option value="spanish">Español</option>
-            </select>
-            <div style="color: white; font-size: 20px;"><span style="color: #49A144;">#</span>UberEats</div
-            <div class="logos">
-                <img src="img/facebook.svg" alt="Facebook"/>
-                <img src="img/twitter.svg" alt="Twitter"/>
-                <img src="img/instagram.svg" alt="Instagram"/>
+              </select>
             </div>
-            <div class = "about">
-                <ul>
-                    <li>
-                      <a href="#">About UberEats</a>
-                    </li>
-                    <li>
-                      <a href="#">Become a Delivery Partner</a>
-                    </li>
-                    <li>
-                      <a href="#">Become a Restaurant Partner</a>
-                    </li>
-                </ul>
+  
+            <div class="footer__info-contacts-hashtag">
+              <p class="footer__info-contacts-hashtag_green">
+                #<span class="footer__info-contacts-hashtag_white"
+                  >UberEats</span
+                >
+              </p>
             </div>
-            <div class = "help">
-                <ul>
-                    <li>
-                      <a href="#">See all cities</a>
-                    </li>
-                    <li>
-                      <a href="#">Pricing</a>
-                    </li>
-                    <li>
-                      <a href="#">Help</a>
-                    </li>
-                    <li>
-                      <a href="#">FAQs</a>
-                    </li>
-                </ul>
+  
+            <div class="footer__info-social-links">
+              <a href="#"
+                ><img src="img/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="img/twitter.svg" alt="Twitter"
+              /></a>
+              <a href="#"
+                ><img src="img/instagram.svg" alt="Instagram"
+              /></a>
             </div>
-            <div class="stores">
-                <img src="./img/app_store.svg"/>
-                <img src="./img/g_play.svg"/>
-            </div>
-            <div class="footer_copyright">
-                <ul>
-                    <li>
-                        © 2017 Uber Technologies Inc.
-                    </li>
-                    <li>
-                      <a href="#">Privacy</a>
-                    </li>
-                    <li>
-                      <a href="#">Terms</a>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </div>
-        <div class="button-arrow-up">
-            <a class="button-arrow-up" href="#">
-                <img src="img/btn-up.svg" alt="Arrow-up"/>
-            </a>
+  
+        <div
+          class="footer__info-block-group"
+        >
+          <ul>
+            <li>
+              <a href="#">About UberEats</a>
+            </li>
+            <li>
+              <a href="#">Become a Delivery Partner</a>
+            </li>
+            <li>
+              <a href="#">Become a Restaurant Partner</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    
+  
+        <div
+          class="footer__info-block-group"
+        >
+          <ul>
+            <li>
+              <a href="#">See all cities</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer__applications">
+        <a href="#">
+          <img src="img/app_store.svg" alt="App Store"
+        /></a>
+        <a href="#">
+          <img src="img/g_play.svg" alt="Google Play"
+        /></a>
+      </div>
+  
+      <div class="footer__copyright">
+        <div>
+          © 2017 Uber Technologies Inc.
+        </div>
+        <div>
+          <a href="#">Privacy</a>
+        </div>
+        <div>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="button-arrow-up">
+      <a class="button-arrow-up" href="#"
+        ><img src="img/btn-up.svg" alt="Arrow-up" />
+      </a>
+    </div>
+  </footer>
 
-    
 </body>
 </html>
